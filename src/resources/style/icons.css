@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'vortezz-icons';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/vortezz-icons.woff2') format('woff2');
+}
+
+.vr {
+    font-family: 'vortezz-icons', serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Social Icons */
+
+.github:before {
+    content: "\07be";
+}
+
+.twitter:before {
+    content: "\07bf";
+}
+
+.linkedin:before {
+    content: "\07c0";
+}
+
+.kofi:before {
+    content: "\07c1";
+}
+
+.discord:before {
+    content: "\07c2";
+}
+
+/* Arrow Icons */
+
+.chevron-down:before {
+    content: "\07e4";
+}
+
+/* Skills Icons */
+
+.typescript:before {
+    content: "\080a";
+}
+
+.javascript:before {
+    content: "\080b";
+}
+
+.java:before {
+    content: "\080c";
+}
+
+.html:before {
+    content: "\080d";
+}
+
+.css:before {
+    content: "\080e";
+}
+
+.python:before {
+    content: "\080f";
+}
+
+.rust:before {
+    content: "\0810";
+}
+
+.flutter:before {
+    content: "\0811";
+}
+
+.tailwind:before {
+    content: "\0812";
+}
+
+.react:before {
+    content: "\0813";
+}
+
+.bash:before {
+    content: "\0814";
+}
+
+.docker:before {
+    content: "\0815";
+}
+
+.git:before {
+    content: "\0816";
+}
+
+.english:before {
+    content: "\0817";
+}
+
+/*
+Misc Icons
+ */
+
+.link:before {
+    content: "\0830";
+}
+
+.email:before {
+    content: "\0831";
+}
+
+.user:before {
+    content: "\0832";
+}
+
+.lock:before {
+    content: "\0833";
+}
+
+.show:before {
+    content: "\0834";
+}
+
+.hide:before {
+    content: "\0835";
+}
+
+.success:before {
+    content: "\0836";
+}
+
+.info:before {
+    content: "\0837";
+}
+
+.warning:before {
+    content: "\0838";
+}
+
+.error:before {
+    content: "\0839";
+}
+
+.x:before {
+    content: "\083a";
+}
+
+.sun:before {
+    content: "\083b";
+}
+
+.moon:before {
+    content: "\083c";
+}
+
+/*
+Brand Icons
+ */
+
+.vortezz:before {
+    content: "\0856";
+}
+
+.ekalia:before {
+    content: "\0857";
+}
+
+.nestle:before {
+    content: "\0858";
+}
+
+.microsoft:before {
+    content: "\0859";
+}
+
+/*
+Rich Text Editor Icons
+ */
+.bold-rte:before {
+    content: "\087C";
+}
+
+.italic-rte:before {
+    content: "\087D";
+}
+
+.underline-rte:before {
+    content: "\087E";
+}
+
+.strikethrough-rte:before {
+    content: "\087F";
+}
+
+.code-rte:before {
+    content: "\0880";
+}
+
+.code-block-rte:before {
+    content: "\0881";
+}
+
+.img-add:before {
+    content: "\0882";
+}
+
+.link-rte:before {
+    content: "\0883";
+}
+
+.heading-1:before {
+    content: "\0884";
+}
+
+.heading-2:before {
+    content: "\0885";
+}
+
+.heading-3:before {
+    content: "\0886";
+}
+
+.heading-4:before {
+    content: "\0887";
+}
+
+.quote-rte:before {
+    content: "\0888";
+}
+
+.list-rte:before {
+    content: "\0889";
+}
