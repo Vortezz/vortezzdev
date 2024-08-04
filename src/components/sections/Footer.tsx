@@ -4,7 +4,7 @@ import logo from "../../resources/pictures/logo.svg";
 
 function Column({ title, links }: { title: string; links: { link: string, name: string }[] }) {
 	return <div className={"flex flex-col mx-auto xs:mx-0 xs:min-w-[calc(150px)] text-center xs:text-left"}>
-		<div className={"text-white font-bold mb-4"}>{title}</div>
+		<div className={"text-white font-bold px-2 mb-4"}>{title}</div>
 		{links.map((link, key) => {
 			return <Button body={link.name}
 				color={"white"}
@@ -32,7 +32,7 @@ export function Footer() {
 	return <div className={"w-full min-h-[calc(16rem)] bg-primary-800 dark:bg-gray-900 flex mt-auto"}>
 		<div className={"w-full h-fit m-auto max-w-[calc(1536px)] flex flex-col justify-between"}>
 			<div className={"flex flex-col md:mx-[min(100%,2rem)] lg:flex-row justify-between flex-wrap"}>
-				<div className={"mb-auto flex text-3xl font-bold text-white align-baseline mt-8 mx-auto lg:ml-[min(100%,2rem)] lg:ml-0"}>
+				<div className={"mb-auto flex text-3xl font-bold text-white align-baseline mt-8 mx-auto lg:ml-0"}>
 					<img className={"h-12 mr-4"}
 						src={logo}
 						alt={"logo"}></img>
