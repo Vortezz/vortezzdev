@@ -20,7 +20,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${SSH_KEY}" > ~/.ssh/github-action
           chmod 400 ~/.ssh/github-action
-          echo -e "Host vortezzdev\n\tUser ${SSH_USER}\n\tHostname ${SSH_HOSTNAME}\n\tPort ${SSH_PORT}\n\tIdentityFile ~/.ssh/github-action" >> ~/.ssh/config
+          echo -e "Host vortezzdev\n\tUser ${SSH_USER}\n\tHostname ${SSH_HOSTNAME}\n\tPort ${SSH_PORT}\n\tIdentityFile\n\tStrictHostKeyChecking No ~/.ssh/github-action" >> ~/.ssh/config
 
       - name: Deploy
         run: ssh vortezzdev "sh build.sh"
