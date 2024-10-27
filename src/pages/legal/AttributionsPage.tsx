@@ -9,7 +9,7 @@ export function AttributionsPage() {
 					<div className={"mb-4 dark:text-white"}>
 						I would like to thank the following people and projects for their work and their help in the creation of this website:
 					</div>
-					<h2 className={"mb-4 dark:text-white font-bold text-xl"}>FRONTEND</h2>
+					<h2 className={"mb-4 text-primary-800 dark:text-white font-bold text-xl"}>FRONTEND</h2>
 					<ul className={"mb-4 dark:text-white"}>
 						<li>Icons from <a href="https://boxicons.com/"
 							rel={"noreferrer"}
@@ -72,7 +72,7 @@ export function AttributionsPage() {
 							rel={"noreferrer"}
 							target={"_blank"}>Contact picture by Lum3n</a></li>
 					</ul>
-					<h2 className={"mb-4 dark:text-white font-bold text-xl"}>BACKEND</h2>
+					<h2 className={"mb-4 text-primary-800 dark:text-white font-bold text-xl"}>BACKEND</h2>
 					<div className={"mb-4 dark:text-white"}>There is no backend enabled at the moment.</div>
 				</div>
 			</div>
