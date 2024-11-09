@@ -1,4 +1,5 @@
 import { Page } from "../../components/pages/Page";
+import { Link } from "react-router-dom";
 
 export function PrivacyPage() {
 	return <Page>
@@ -8,14 +9,30 @@ export function PrivacyPage() {
 					<h1 className={"text-3xl text-primary-800 dark:text-white mb-8 font-bold"}>Privacy Policy</h1>
 					<h2 className={"mb-4 dark:text-white font-bold text-xl"}>PRIVACY & DATA</h2>
 					<div className={"mb-4 dark:text-white"}>Your privacy is important to us. It is Vortezz's policy to respect your privacy regarding any information we may collect from you across our
-						website, <a href="https://vortezz.dev">https://vortezz.dev</a>, and other sites we own and operate. At the moment, we do not collect any data from you, but we may do in the future, only if we need
+						website, <a href="https://vortezz.dev">https://vortezz.dev</a>, and other sites or apps we own and operate, listed below :
+						<ul className={"list-disc list-inside"}>
+							<li><Link to={"/"}
+								target={"_blank"}
+								rel={"noreferrer"}>vortezz.dev</Link></li>
+							<li><a href={"https://play.google.com/store/apps/details?id=dev.vortezz.td"}
+								target={"_blank"}
+								rel={"noreferrer"}>Truth Or Dare</a></li>
+							<li><a href={"https://play.google.com/store/apps/details?id=dev.vortezz.molkkycount"}
+								target={"_blank"}
+								rel={"noreferrer"}>Mölkky Count</a></li>
+							<li><a href={"https://play.google.com/store/apps/details?id=dev.vortezz.sanssurtaxe"}
+								target={"_blank"}
+								rel={"noreferrer"}>Sans Surtaxe</a></li>
+						</ul>
+						<br />
+						At the moment, we do not collect any data from you, but we may do in the future, only if we need
 						to access it to create a better experience for you.
 					</div>
 					<div className={"mb-4 dark:text-white"}>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge
 						and consent. We also let you know why we’re collecting it and how it will be used. When we will collect your data, you will be informed and you will have the possibility to download it or delete
 						at any time.
 					</div>
-					<div className={"mb-4 dark:text-white"}>Please note that we may change this policy in the future, but we will notify you if we do. The last update of this policy was on the 29th of October 2023.</div>
+					<div className={"mb-4 dark:text-white"}>Please note that we may change this policy in the future, but we will notify you if we do. The last update of this policy was on the 9th of November 2024.</div>
 					<div className={"mb-4 dark:text-white"}>
 						If you have any questions about this Privacy Policy, please contact us at <a href="mailto:contact@vortezz.dev">contact@vortezz.dev</a> or by phone at <a href={"tel:+33652220852"}>+33 6 52 22 08
 						52</a> (be
