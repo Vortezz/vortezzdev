@@ -164,6 +164,10 @@ Misc Icons
     content: "\083c";
 }
 
+.party:before {
+    content: "\083d";
+}
+
 /*
 Brand Icons
  */
