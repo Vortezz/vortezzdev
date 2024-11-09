@@ -1,3 +1,5 @@
+const TerserPlugin = require("terser-webpack-plugin");
+
 module.exports = {
 	module: {
 		rules: [
@@ -15,5 +17,9 @@ module.exports = {
 			},
 		]
 	},
-	throwIfNamespace: false
+	throwIfNamespace: false,
+	optimization: {
+		minimize: true,
+		minimizer: [new TerserPlugin()],
+	}
 };
