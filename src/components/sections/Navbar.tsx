@@ -2,7 +2,7 @@ import { Button } from "../actions/Button";
 
 import logo from "../../resources/pictures/logo.svg";
 import { ReactElement, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const notifications: {
 	id: string;
@@ -12,15 +12,26 @@ const notifications: {
 	to_date: Date;
 	content: ReactElement;
 }[] = [{
-	id: "td-app",
+	id: "ct-1-2025",
 	icon: "party",
 	color: "bg-green-600",
-	from_date: new Date("2024-11-9"),
-	to_date: new Date("2024-11-16"),
-	content: <div className={"my-auto py-4 text-white"}>New Truth Or Dare app available on Google Play, click <a className={"font-bold"}
-		href={"https://play.google.com/store/apps/details?id=dev.vortezz.td"}
+	from_date: new Date("2024-11-30"),
+	to_date: new Date("2024-12-25"),
+	content: <div className={"my-auto py-4 text-white"}>The countdown until 2025 is live! Go check it out just <Link className={"font-bold"}
+		to={"/2025"}
 		target={"_blank"}
-		rel={"noreferrer"}>here</a> to download it!
+		rel={"noreferrer"}>here</Link>!
+	</div>,
+}, {
+	id: "ct-1-2025",
+	icon: "party",
+	color: "bg-green-600",
+	from_date: new Date("2024-12-26"),
+	to_date: new Date("2025-01-01"),
+	content: <div className={"my-auto py-4 text-white"}>Only a few days until 2025! Go check the counter just <Link className={"font-bold"}
+		to={"/2025"}
+		target={"_blank"}
+		rel={"noreferrer"}>here</Link>!
 	</div>,
 }];
 

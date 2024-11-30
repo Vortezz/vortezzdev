@@ -4,6 +4,7 @@ import React from "react";
 import { Error404Page } from "./pages/special/Error404Page";
 import { PrivacyPage } from "./pages/legal/PrivacyPage";
 import { AttributionsPage } from "./pages/legal/AttributionsPage";
+import { NewYearPage } from "./pages/special/NewYearPage";
 
 export function App() {
 	if (localStorage.getItem("theme") === "dark") {
@@ -23,7 +24,9 @@ export function App() {
 				<Route path={"/attributions"}
 					element={<AttributionsPage />} />
 
-				{/* 404 */}
+				{/* Special */}
+				<Route path={"/2025"}
+					element={<NewYearPage />} />
 				<Route path={"*"}
 					element={<Error404Page />} />
 			</Routes>

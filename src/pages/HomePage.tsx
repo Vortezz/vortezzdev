@@ -394,7 +394,7 @@ export function HomePage() {
 							About me
 						</h2>
 						<div className={"text-lg mt-4 dark:text-white"}>
-							My name is Victor, under the pseudonym Vortezz. I am a 17 years old developer from France 🥖. I have started development in 2019 and I develop websites, mobile applications and Minecraft
+							My name is Victor, under the pseudonym Vortezz. I am a 18 years old developer from France 🥖. I have started development in 2019 and I develop websites, mobile applications and Minecraft
 							plugins
 							mainly but learning new things is my
 							passion. I am also a nature lover, I love to go hiking in the mountains and to take pictures of the landscapes. Actually I'm in preparatory class for engineering schools at Louis-le-Grand in
