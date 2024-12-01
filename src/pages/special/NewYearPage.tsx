@@ -30,23 +30,23 @@ export function NewYearPage() {
 					<h1 className={"sm:text-[3rem] text-3xl text-primary-800 dark:text-white font-bold mx-auto leading-none"}>TIME BEFORE 2025:</h1>
 					<div className={"flex flex-row flex-wrap mt-8"}>
 						<div className={"flex flex-row flex-wrap mx-auto"}>
-							<div className={"flex flex-col mx-auto w-48"}>
-								<h2 className={"text-[6rem] text-primary-800 dark:text-white font-bold leading-none mx-auto"}>{("0" + days).slice(-2)}</h2>
-								<h2 className={"text-xl text-primary-800 dark:text-white mb-8 font-thin mx-auto"}>DAYS</h2>
+							<div className={"flex flex-col mx-auto w-48 hover:-translate-y-1 transition-transform"}>
+								<h2 className={`text-[6rem] ${days == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} font-bold leading-none mx-auto`}>{("0" + days).slice(-2)}</h2>
+								<h2 className={`text-xl ${days == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} mb-8 font-thin mx-auto`}>DAYS</h2>
 							</div>
-							<div className={"flex flex-col mx-auto w-48"}>
-								<h2 className={"text-[6rem] text-primary-800 dark:text-white font-bold leading-none mx-auto"}>{("0" + hours).slice(-2)}</h2>
-								<h2 className={"text-xl text-primary-800 dark:text-white mb-8 font-thin mx-auto"}>HOURS</h2>
+							<div className={"flex flex-col mx-auto w-48 hover:-translate-y-1 transition-transform"}>
+								<h2 className={`text-[6rem] ${days == 0 && hours == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} font-bold leading-none mx-auto`}>{("0" + hours).slice(-2)}</h2>
+								<h2 className={`text-xl ${days == 0 && hours == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} mb-8 font-thin mx-auto`}>HOURS</h2>
 							</div>
 						</div>
 						<div className={"flex flex-row flex-wrap mx-auto"}>
-							<div className={"flex flex-col mx-auto w-48"}>
-								<h2 className={"text-[6rem] text-primary-800 dark:text-white font-bold leading-none mx-auto"}>{("0" + minutes).slice(-2)}</h2>
-								<h2 className={"text-xl text-primary-800 dark:text-white mb-8 font-thin mx-auto"}>MINUTES</h2>
+							<div className={"flex flex-col mx-auto w-48 hover:-translate-y-1 transition-transform"}>
+								<h2 className={`text-[6rem] ${days == 0 && hours == 0 && minutes == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} font-bold leading-none mx-auto`}>{("0" + minutes).slice(-2)}</h2>
+								<h2 className={`text-xl ${days == 0 && hours == 0 && minutes == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} mb-8 font-thin mx-auto`}>MINUTES</h2>
 							</div>
-							<div className={"flex flex-col mx-auto w-48"}>
-								<h2 className={"text-[6rem] text-primary-800 dark:text-white font-bold leading-none mx-auto"}>{("0" + seconds).slice(-2)}</h2>
-								<h2 className={"text-xl text-primary-800 dark:text-white mb-8 font-thin mx-auto"}>SECONDS</h2>
+							<div className={"flex flex-col mx-auto w-48 hover:-translate-y-1 transition-transform"}>
+								<h2 className={`text-[6rem] ${days == 0 && hours == 0 && minutes == 0 && seconds == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} font-bold leading-none mx-auto`}>{("0" + seconds).slice(-2)}</h2>
+								<h2 className={`text-xl ${days == 0 && hours == 0 && minutes == 0 && seconds == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} mb-8 font-thin mx-auto`}>SECONDS</h2>
 							</div>
 						</div>
 					</div>
