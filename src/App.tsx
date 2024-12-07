@@ -5,6 +5,7 @@ import { Error404Page } from "./pages/special/Error404Page";
 import { PrivacyPage } from "./pages/legal/PrivacyPage";
 import { AttributionsPage } from "./pages/legal/AttributionsPage";
 import { NewYearPage } from "./pages/special/NewYearPage";
+import ScrollToTop from "./components/AutoScroll";
 
 export function App() {
 	if (localStorage.getItem("theme") === "dark") {
@@ -13,6 +14,7 @@ export function App() {
 
 	return <>
 		<BrowserRouter>
+			<ScrollToTop />
 			<Routes>
 				{/* Home */}
 				<Route path="/"

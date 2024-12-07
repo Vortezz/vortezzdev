@@ -19,18 +19,22 @@ const notifications: {
 	to_date: new Date("2024-12-25"),
 	content: <div className={"my-auto py-4 text-white"}>The countdown until 2025 is live! Go check it out just <Link className={"font-bold"}
 		to={"/2025"}
-		target={"_blank"}
+		onClick={() => {
+			localStorage.setItem("dismissed-notification", "ct-1-2025");
+		}}
 		rel={"noreferrer"}>here</Link>!
 	</div>,
 }, {
-	id: "ct-1-2025",
+	id: "ct-2-2025",
 	icon: "party",
 	color: "bg-green-600",
 	from_date: new Date("2024-12-26"),
 	to_date: new Date("2025-01-01"),
 	content: <div className={"my-auto py-4 text-white"}>Only a few days until 2025! Go check the counter just <Link className={"font-bold"}
 		to={"/2025"}
-		target={"_blank"}
+		onClick={() => {
+			localStorage.setItem("dismissed-notification", "ct-2-2025");
+		}}
 		rel={"noreferrer"}>here</Link>!
 	</div>,
 }];
@@ -66,6 +70,14 @@ export function Navbar({ withoutSpace }: { withoutSpace?: boolean }) {
 							color={"white"}
 							type={"quaternary"}
 							link={"mailto:contact@vortezz.dev"}
+							className={"my-auto mr-8"} />
+						<Button body={<div className={"flex flex-row"}>
+							<div>2025</div>
+							<i className={"vr party ml-2 my-auto"}></i>
+						</div>}
+							color={"white"}
+							type={"quaternary"}
+							link={"/2025"}
 							className={"my-auto mr-8"} />
 						<div className={`my-auto mr-8 text-md text-white cursor-pointer hover:rotate-45 transition-transform vr ${document.documentElement.classList.contains("dark") ? "sun" : "moon"}`}
 							onClick={(elem) => {
@@ -141,6 +153,18 @@ export function Navbar({ withoutSpace }: { withoutSpace?: boolean }) {
 					type={"quaternary"}
 					size={"large"}
 					link={"mailto:contact@vortezz.dev"}
+					className={"my-2 mx-auto"} />
+				<Button body={<div className={"flex flex-row"}>
+					<div>2025</div>
+					<i className={"vr party ml-2 my-auto"}></i>
+				</div>}
+					color={"white"}
+					type={"quaternary"}
+					size={"large"}
+					onClick={() => {
+						setIsMenuOpen(false);
+						navigate("/2025");
+					}}
 					className={"my-2 mx-auto"} />
 				<div className={`my-2 mx-auto text-2xl text-white cursor-pointer hover:rotate-45 transition-transform vr ${document.documentElement.classList.contains("dark") ? "sun" : "moon"}`}
 					onClick={(elem) => {
