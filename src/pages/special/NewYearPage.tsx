@@ -1,13 +1,17 @@
 import { Page } from "../../components/pages/Page";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 export function NewYearPage() {
 	const targetTimestamp = 1735686000000;
 
-	const [days, setDays] = useState<number>(0);
-	const [hours, setHours] = useState<number>(0);
-	const [minutes, setMinutes] = useState<number>(0);
-	const [seconds, setSeconds] = useState<number>(0);
+	const currentTimestamp = Date.now();
+	const delta = (targetTimestamp - currentTimestamp) / 1000;
+
+	const [days, setDays] = useState<number>(Math.floor(delta / 86400));
+	const [hours, setHours] = useState<number>(Math.floor((delta / 3600) % 24));
+	const [minutes, setMinutes] = useState<number>(Math.floor((delta / 60) % 60));
+	const [seconds, setSeconds] = useState<number>(Math.floor(delta % 60));
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -25,6 +29,15 @@ export function NewYearPage() {
 
 	return <Page>
 		<div className={`py-24 w-full flex relative`}>
+			<Helmet>
+				<title>{`${days}d ${hours}h ${minutes}m ${seconds}s until 2025`}</title>
+				<meta name="description"
+					content="Keep track of the time left before 2025!" />
+				<meta property="og:description"
+					content="Keep track of the time left before 2025!" />
+				<meta property="twitter:description"
+					content="Keep track of the time left before 2025!" />
+			</Helmet>
 			<div className={"mx-auto w-full max-w-[calc(1536px)] flex flex-wrap justify-around flex-col 2xl:flex-row gap-y-16"}>
 				<div className={"m-auto flex flex-col"}>
 					<h1 className={"sm:text-[3rem] text-3xl text-primary-800 dark:text-white font-bold mx-auto leading-none"}>TIME BEFORE 2025:</h1>

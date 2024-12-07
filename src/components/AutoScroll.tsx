@@ -8,7 +8,6 @@ export default function ScrollToTop() {
 		setTimeout(() => {
 			window.scrollTo(0, 0);
 		}, 10);
-		console.log(pathname);
 	}, [pathname]);
 
 	return null;
