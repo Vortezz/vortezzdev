@@ -51,7 +51,7 @@
         height: 1em;
         @apply inline-block overflow-y-hidden;
 
-        &:before {
+        &::before {
             text-align: center;
             transition: all 1s cubic-bezier(1, 0, 0, 1);
             position: relative;
