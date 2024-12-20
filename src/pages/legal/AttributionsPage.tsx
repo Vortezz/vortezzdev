@@ -68,6 +68,9 @@ export function AttributionsPage() {
 						<li><a href="https://www.npmjs.com/package/storybook"
 							rel={"noreferrer"}
 							target={"_blank"}>storybook</a></li>
+						<li><a href="https://www.npmjs.com/package/daisyui"
+							rel={"noreferrer"}
+							target={"_blank"}>daisyui</a></li>
 						<li><a href="https://www.pexels.com/@lum3n-44775/"
 							rel={"noreferrer"}
 							target={"_blank"}>Contact picture by Lum3n</a></li>
