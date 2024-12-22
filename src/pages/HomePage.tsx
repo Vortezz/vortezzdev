@@ -372,8 +372,8 @@ export function HomePage() {
 								alt={"Top picture of mountains"} />
 						</div>
 					</div>
-					<div className={"mt-16 mb-8 w-full max-w-[calc(1536px)] flex"}>
-						<div className={"mx-auto flex flex-col text-primary-700 dark:text-white hover:-translate-y-1 transition-transform"}>
+					<div className={"mt-16 mb-8 w-full max-w-[calc(1536px)] flex animate-bounce"}>
+						<div className={"mx-auto flex flex-col text-primary-700 dark:text-white dark:hover:text-primary-200 hover:text-primary-300 transition-transform"}>
 							<div className={"text-lg font-bold cursor-pointer mb-2"}
 								onClick={scrollToAbout}>LEARN MORE
 							</div>
