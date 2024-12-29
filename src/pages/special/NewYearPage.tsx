@@ -68,7 +68,8 @@ export function NewYearPage() {
 							<div className={"flex flex-row flex-wrap mx-auto"}>
 								<div className={"flex flex-col mx-auto w-48 text-center hover:-translate-y-1 transition-transform"}>
 									<div className={`countdown text-[6rem] ${days == 0 && hours == 0 && minutes == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} font-bold leading-none mx-auto`}>
-										<span style={{ "--value": ("0" + minutes).slice(-2) } as CSSProperties}></span>
+										<span
+											style={{ "--value": ("0" + minutes).slice(-2) } as CSSProperties}></span>
 									</div>
 									<h2 className={`text-xl ${days == 0 && hours == 0 && minutes == 0 ? "text-primary-300" : "text-primary-800 dark:text-white"} mb-8 font-thin mx-auto`}>MINUTES</h2>
 								</div>
