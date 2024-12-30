@@ -6,6 +6,7 @@ import { PrivacyPage } from "./pages/legal/PrivacyPage";
 import { AttributionsPage } from "./pages/legal/AttributionsPage";
 import { NewYearPage } from "./pages/special/NewYearPage";
 import ScrollToTop from "./components/AutoScroll";
+import { ChangelogPage } from "./pages/legal/ChangelogPage";
 
 export function App() {
 	if (localStorage.getItem("theme") === "dark") {
@@ -25,6 +26,8 @@ export function App() {
 					element={<PrivacyPage />} />
 				<Route path={"/attributions"}
 					element={<AttributionsPage />} />
+				<Route path={"/changelog"}
+					element={<ChangelogPage />} />
 
 				{/* Special */}
 				<Route path={"/2025"}

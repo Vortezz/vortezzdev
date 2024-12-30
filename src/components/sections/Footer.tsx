@@ -94,6 +94,10 @@ export function Footer() {
 									link: "/attributions",
 									name: "Attributions",
 								},
+								{
+									link: "/changelog",
+									name: "Changelog",
+								},
 								// {
 								// 	link: "/data-processing",
 								// 	name: "Data Processing",
