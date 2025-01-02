@@ -71,14 +71,6 @@ export function Navbar({ withoutSpace }: { withoutSpace?: boolean }) {
 							type={"quaternary"}
 							link={"mailto:contact@vortezz.dev"}
 							className={"my-auto mr-8"} />
-						<Button body={<div className={"flex flex-row"}>
-							<div>2025</div>
-							<i className={"vr party ml-2 my-auto"}></i>
-						</div>}
-							color={"white"}
-							type={"quaternary"}
-							link={"/2025"}
-							className={"my-auto mr-8"} />
 						<div className={`my-auto mr-8 text-md text-white cursor-pointer hover:rotate-45 transition-transform vr ${document.documentElement.classList.contains("dark") ? "sun" : "moon"}`}
 							onClick={(elem) => {
 								document.documentElement.classList.toggle("dark");
@@ -153,18 +145,6 @@ export function Navbar({ withoutSpace }: { withoutSpace?: boolean }) {
 					type={"quaternary"}
 					size={"large"}
 					link={"mailto:contact@vortezz.dev"}
-					className={"my-2 mx-auto"} />
-				<Button body={<div className={"flex flex-row"}>
-					<div>2025</div>
-					<i className={"vr party ml-2 my-auto"}></i>
-				</div>}
-					color={"white"}
-					type={"quaternary"}
-					size={"large"}
-					onClick={() => {
-						setIsMenuOpen(false);
-						navigate("/2025");
-					}}
 					className={"my-2 mx-auto"} />
 				<div className={`my-2 mx-auto text-2xl text-white cursor-pointer hover:rotate-45 transition-transform vr ${document.documentElement.classList.contains("dark") ? "sun" : "moon"}`}
 					onClick={(elem) => {

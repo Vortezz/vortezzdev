@@ -4,7 +4,6 @@ import React from "react";
 import { Error404Page } from "./pages/special/Error404Page";
 import { PrivacyPage } from "./pages/legal/PrivacyPage";
 import { AttributionsPage } from "./pages/legal/AttributionsPage";
-import { NewYearPage } from "./pages/special/NewYearPage";
 import ScrollToTop from "./components/AutoScroll";
 import { ChangelogPage } from "./pages/legal/ChangelogPage";
 
@@ -30,8 +29,8 @@ export function App() {
 					element={<ChangelogPage />} />
 
 				{/* Special */}
-				<Route path={"/2025"}
-					element={<NewYearPage />} />
+				{/*<Route path={"/2025"}*/}
+				{/*	element={<NewYearPage />} />*/}
 				<Route path={"*"}
 					element={<Error404Page />} />
 			</Routes>
