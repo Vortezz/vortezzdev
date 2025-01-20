@@ -132,8 +132,6 @@ export function Footer() {
 						icon={"kofi"} />
 					<SocialButton link={"https://www.linkedin.com/in/vsarrazin/"}
 						icon={"linkedin"} />
-					<SocialButton link={"https://twitter.com/vortezzdev"}
-						icon={"twitter"} />
 				</div>
 			</div>
 		</div>
