@@ -394,12 +394,13 @@ export function HomePage() {
 							About me
 						</h2>
 						<div className={"text-lg mt-4 dark:text-white"}>
-							My name is Victor, under the pseudonym Vortezz. I am a 18 years old developer from France 🥖. I have started development in 2019 and I develop websites, mobile applications and Minecraft
-							plugins
-							mainly but learning new things is my
-							passion. I am also a nature lover, I love to go hiking in the mountains and to take pictures of the landscapes. Actually I'm in preparatory class for engineering schools at Louis-le-Grand in
-							Paris. I am also Director of Java Development at <a target={"_blank"}
-							href={"https://ekalia.fr/"}
+							Hi! I'm Victor, also known online as Vortezz. I'm an 18-year-old developer from France 🥖. I started coding in 2019 and specialize in building websites, mobile apps, and Minecraft plugins.
+							However, I'm always eager to learn new technologies.
+
+							Beyond coding, I'm passionate about nature - I love hiking in the mountains and capturing stunning landscapes through photography.
+
+							Currently, I'm in a preparatory class for engineering schools at Louis-le-Grand in Paris. Since 2022, I've also been the Java Lead at <a target="_blank"
+							href="https://ekalia.fr/"
 							rel="noreferrer">Ekalia</a>.
 						</div>
 					</div>
