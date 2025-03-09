@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://vortezz.dev/</loc>
-		<lastmod>2024-07-03T01:07:09+01:00</lastmod>
+		<lastmod>2025-03-09T09:52:13+01:00</lastmod>
 		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>https://vortezz.dev/privacy</loc>
-		<lastmod>2024-07-03T01:07:09+01:00</lastmod>
+		<lastmod>2025-03-09T09:52:13+01:00</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://vortezz.dev/attributions</loc>
 		<lastmod>2024-07-03T01:07:09+01:00</lastmod>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://vortezz.dev/changelog</loc>
+		<lastmod>2025-03-09T09:52:13+01:00</lastmod>
 		<priority>0.3</priority>
 	</url>
 </urlset>

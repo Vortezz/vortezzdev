@@ -138,7 +138,7 @@ const projects: { id: string, name: string, picture: string, text: string, creat
 		id: "vortezz",
 		name: "vortezz.dev",
 		picture: vortezzDevPicture,
-		text: "The website you are currently on. It is a personal website where I share my projects and my tools in the future.",
+		text: "The website you are currently on. It is a personal website on which I share my projects and maybe tools in the future.",
 		created: [
 			{ icon: "vortezz", link: "https://vortezz.dev/" },
 		],
@@ -535,9 +535,9 @@ export function HomePage() {
 							Contact
 						</h2>
 						<div className={"text-lg mt-4 dark:text-white"}>
-							You want to contact me? You can send me an email at <a href={"mailto:contact@vortezz.dev"}>contact@vortezz.dev</a> or you can text me at <a href={"tel:+33652220852"}>+33 6 52 22 08 52</a> (be
+							You want to contact me? Send me an email at <a href={"mailto:contact@vortezz.dev"}>contact@vortezz.dev</a> or text me at <a href={"tel:+33652220852"}>+33 6 52 22 08 52</a> (be
 							aware of surcharges if
-							you are not in France).
+							you are not in France)!
 						</div>
 						<Button body={"Contact me"}
 							color={"primary"}
