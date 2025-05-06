@@ -44,7 +44,7 @@ const notifications: {
 	from_date: new Date("2025-05-06"),
 	to_date: new Date("2025-06-06"),
 	content: <div className={"my-auto py-4 text-white"}>The gallery page is now online! Take a look <Link className={"font-bold"}
-		to={"/2025"}
+		to={"/gallery"}
 		onClick={() => {
 			localStorage.setItem("dismissed-notification", "gallery");
 		}}
