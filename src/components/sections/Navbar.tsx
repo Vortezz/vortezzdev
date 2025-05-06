@@ -37,6 +37,19 @@ const notifications: {
 		}}
 		rel={"noreferrer"}>here</Link>!
 	</div>,
+}, {
+	id: "gallery",
+	icon: "party",
+	color: "bg-yellow-500",
+	from_date: new Date("2025-05-06"),
+	to_date: new Date("2025-06-06"),
+	content: <div className={"my-auto py-4 text-white"}>The gallery page is now online! Take a look <Link className={"font-bold"}
+		to={"/2025"}
+		onClick={() => {
+			localStorage.setItem("dismissed-notification", "gallery");
+		}}
+		rel={"noreferrer"}>here</Link>!
+	</div>,
 }];
 
 export function Navbar({ withoutSpace }: { withoutSpace?: boolean }) {
@@ -122,7 +135,7 @@ export function Navbar({ withoutSpace }: { withoutSpace?: boolean }) {
 			</div>
 			{
 				currentNotification &&
-				<div className={"w-full min-h-12 bg-green-600 dark:bg-gray-900 flex fixed z-[40] top-24"}>
+				<div className={`w-full min-h-12 ${currentNotification.color} flex fixed z-[40] top-24`}>
 					<i className={"ml-8 mr-4 my-auto text-white vr party"} />
 					{currentNotification.content}
 					<i className={"ml-auto pl-4 mr-8 my-auto text-white vr x cursor-pointer"}
