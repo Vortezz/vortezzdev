@@ -168,6 +168,14 @@ Misc Icons
     content: "\083d";
 }
 
+.pin:before {
+    content: "\083e";
+}
+
+.date:before {
+    content: "\083f";
+}
+
 /*
 Brand Icons
  */

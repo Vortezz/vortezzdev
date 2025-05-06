@@ -6,6 +6,8 @@ import { PrivacyPage } from "./pages/legal/PrivacyPage";
 import { AttributionsPage } from "./pages/legal/AttributionsPage";
 import ScrollToTop from "./components/AutoScroll";
 import { ChangelogPage } from "./pages/legal/ChangelogPage";
+import GalleryPage from "./pages/gallery/GalleryPage";
+import ViewingPage from "./pages/gallery/ViewingPage";
 
 export function App() {
 	if (localStorage.getItem("theme") === "dark") {
@@ -19,6 +21,12 @@ export function App() {
 				{/* Home */}
 				<Route path="/"
 					element={<HomePage />} />
+
+				{/* Gallery */}
+				<Route path="/gallery"
+					element={<GalleryPage />} />
+				<Route path="/gallery/:id"
+					element={<ViewingPage />} />
 
 				{/* Legal */}
 				<Route path={"/privacy"}

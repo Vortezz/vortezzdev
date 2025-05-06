@@ -8,7 +8,7 @@ export function Error404Page() {
 				<div className={"m-auto flex flex-col"}>
 					<h1 className={"text-[8rem] text-primary-800 dark:text-white font-bold mx-auto leading-none"}>404</h1>
 					<h2 className={"text-3xl text-primary-800 dark:text-white mb-8 font-bold mx-auto"}>PAGE NOT FOUND</h2>
-					<div className={"mx-[min(100%,2rem)] mb-4 dark:text-white"}>It seem that this page have been lost in the Internet, if you think this is an error, please contact us.</div>
+					<div className={"mx-[min(100%,2rem)] mb-4 dark:text-white"}>It seems that this page have been lost in the Internet, if you think this is an error, please contact me.</div>
 					<Button body={"Go back"}
 						color={"primary"}
 						className={"mt-4 mx-auto"}

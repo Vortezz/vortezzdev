@@ -84,8 +84,12 @@ export function Footer() {
 							} />*/}
 					</div>
 					<div className={"flex flex-wrap flex-col sm:flex-row mx-auto mt-8 md:mx-0 lg:m-0 gap-y-8"}>
-						<Column title={"Legal"}
+						<Column title={"Other"}
 							links={[
+								{
+									link: "/gallery",
+									name: "Gallery",
+								},
 								{
 									link: "/privacy",
 									name: "Privacy Policy",
