@@ -67,7 +67,7 @@ export function ChangelogPage() {
 					if (title.match(/(fix|feat|wip):.*/gm)) {
 						let groups = message.matchAll(/(fix|feat|wip):.*/gm).next();
 
-						if (groups) {
+						if (groups && groups.value && groups.value.length > 1) {
 							type = groups.value[1].toUpperCase();
 
 							title = title.substring(type.length + 1).trim();

@@ -1,4 +1,4 @@
-import { KeyboardEventHandler } from "react";
+import { JSX, KeyboardEventHandler } from "react";
 
 export function Line({ children, background, id, onMouseOver, onMouseOut, className, onKeyPress }: {
 	children: string | JSX.Element | JSX.Element[], background: "white" | "gray", id?: string,

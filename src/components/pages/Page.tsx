@@ -1,6 +1,7 @@
 import { Navbar } from "../sections/Navbar";
 import { Footer } from "../sections/Footer";
 import ReactConfetti from "react-confetti";
+import { JSX } from "react";
 
 export function Page({ children }: { children: JSX.Element }) {
 	const date = new Date();
