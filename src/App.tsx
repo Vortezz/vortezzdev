@@ -8,6 +8,7 @@ import ScrollToTop from "./components/AutoScroll";
 import { ChangelogPage } from "./pages/legal/ChangelogPage";
 import GalleryPage from "./pages/gallery/GalleryPage";
 import ViewingPage from "./pages/gallery/ViewingPage";
+import { NewYearPage } from "./pages/special/NewYearPage";
 
 export function App() {
 	if (localStorage.getItem("theme") === "dark") {
@@ -37,8 +38,8 @@ export function App() {
 					element={<ChangelogPage />} />
 
 				{/* Special */}
-				{/*<Route path={"/2025"}*/}
-				{/*	element={<NewYearPage />} />*/}
+				<Route path={"/2026"}
+					element={<NewYearPage />} />
 				<Route path={"*"}
 					element={<Error404Page />} />
 			</Routes>

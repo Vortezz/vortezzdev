@@ -86,10 +86,6 @@
     @apply my-4;
 }
 
-.countdown > *:before {
-    transition: top 1s cubic-bezier(1, 0, 0, 1);
-}
-
 .special-hide {
     opacity: 0;
     pointer-events: none;

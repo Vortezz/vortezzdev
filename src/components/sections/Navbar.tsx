@@ -12,41 +12,28 @@ const notifications: {
 	to_date: Date;
 	content: ReactElement;
 }[] = [{
-	id: "ct-1-2025",
+	id: "ct-1-2026",
 	icon: "party",
 	color: "bg-green-600",
-	from_date: new Date("2024-11-30"),
-	to_date: new Date("2024-12-25"),
-	content: <div className={"my-auto py-4 text-white"}>The countdown until 2025 is live! Go check it out just <Link className={"font-bold"}
-		to={"/2025"}
+	from_date: new Date("2025-11-30"),
+	to_date: new Date("2025-12-25"),
+	content: <div className={"my-auto py-4 text-white"}>The countdown until 2026 is live! Go check it out just <Link className={"font-bold"}
+		to={"/2026"}
 		onClick={() => {
-			localStorage.setItem("dismissed-notification", "ct-1-2025");
+			localStorage.setItem("dismissed-notification", "ct-1-2026");
 		}}
 		rel={"noreferrer"}>here</Link>!
 	</div>,
 }, {
-	id: "ct-2-2025",
+	id: "ct-2-2026",
 	icon: "party",
 	color: "bg-green-600",
-	from_date: new Date("2024-12-26"),
-	to_date: new Date("2025-01-01"),
-	content: <div className={"my-auto py-4 text-white"}>Only a few days until 2025! Go check the counter just <Link className={"font-bold"}
-		to={"/2025"}
+	from_date: new Date("2025-12-26"),
+	to_date: new Date("2026-01-01"),
+	content: <div className={"my-auto py-4 text-white"}>Only a few days until 2026! Go check the counter just <Link className={"font-bold"}
+		to={"/2026"}
 		onClick={() => {
-			localStorage.setItem("dismissed-notification", "ct-2-2025");
-		}}
-		rel={"noreferrer"}>here</Link>!
-	</div>,
-}, {
-	id: "gallery",
-	icon: "party",
-	color: "bg-yellow-500",
-	from_date: new Date("2025-05-06"),
-	to_date: new Date("2025-06-06"),
-	content: <div className={"my-auto py-4 text-white"}>The gallery page is now online! Take a look <Link className={"font-bold"}
-		to={"/gallery"}
-		onClick={() => {
-			localStorage.setItem("dismissed-notification", "gallery");
+			localStorage.setItem("dismissed-notification", "ct-2-2026");
 		}}
 		rel={"noreferrer"}>here</Link>!
 	</div>,
@@ -88,6 +75,14 @@ export function Navbar({ withoutSpace }: { withoutSpace?: boolean }) {
 							color={"white"}
 							type={"quaternary"}
 							link={"/gallery"}
+							className={"my-auto mr-8"} />
+						<Button body={<div className={"flex flex-row"}>
+							<div>2026</div>
+							<i className={"vr party ml-2 my-auto"}></i>
+						</div>}
+							color={"white"}
+							type={"quaternary"}
+							link={"/2026"}
 							className={"my-auto mr-8"} />
 						<div className={`my-auto mr-8 text-md text-white cursor-pointer hover:rotate-45 transition-transform vr ${document.documentElement.classList.contains("dark") ? "sun" : "moon"}`}
 							onClick={(elem) => {
@@ -186,6 +181,18 @@ export function Navbar({ withoutSpace }: { withoutSpace?: boolean }) {
 						elem.currentTarget.classList.toggle("moon");
 						elem.currentTarget.classList.toggle("sun");
 					}}></div>
+				<Button body={<div className={"flex flex-row"}>
+					<div>2026</div>
+					<i className={"vr party ml-2 my-auto"}></i>
+				</div>}
+					color={"white"}
+					type={"quaternary"}
+					size={"large"}
+					onClick={() => {
+						setIsMenuOpen(false);
+						navigate("/2026");
+					}}
+					className={"my-2 mx-auto"} />
 				{/*<Button body={"Blog"}
 					color={"white"}
 					type={"quaternary"}
