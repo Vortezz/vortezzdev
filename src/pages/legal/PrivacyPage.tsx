@@ -23,16 +23,18 @@ export function PrivacyPage() {
 							<li><a href={"https://play.google.com/store/apps/details?id=dev.vortezz.sanssurtaxe"}
 								target={"_blank"}
 								rel={"noreferrer"}>Sans Surtaxe</a></li>
+							<li><a href={"https://github.com/Vortezz/github-folders"}
+								target={"_blank"}
+								rel={"noreferrer"}>GitHub Folders</a></li>
 						</ul>
 						<br />
-						At the moment, we do not collect any data from you, but we may do in the future, only if we need
-						to access it to create a better experience for you.
+						All apps except GitHub Folders do not collect any user data. For GitHub Folders, data collection is strictly local: it only processes the content of the current page on github.com to organize folders. Across all our apps, no data is ever sent to our servers (apart from the usual process of loading the website itself).
 					</div>
 					<div className={"mb-4 dark:text-white"}>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge
 						and consent. We also let you know why we’re collecting it and how it will be used. When we will collect your data, you will be informed and you will have the possibility to download it or delete
 						at any time.
 					</div>
-					<div className={"mb-4 dark:text-white"}>Please note that we may change this policy in the future, but we will notify you if we do. The last update of this policy was on the 9th of November 2024.</div>
+					<div className={"mb-4 dark:text-white"}>Please note that we may change this policy in the future, but we will notify you if we do. The last update of this policy was on the 12th of December 2025.</div>
 					<div className={"mb-4 dark:text-white"}>
 						If you have any questions about this Privacy Policy, please contact us at <a href="mailto:contact@vortezz.dev">contact@vortezz.dev</a> or by phone at <a href={"tel:+33652220852"}>+33 6 52 22 08
 						52</a> (be
