@@ -5,7 +5,10 @@ import ReactConfetti from "react-confetti";
 import "../../resources/style/countdown.css";
 
 export function NewYearPage() {
-	const targetTimestamp = 1767222000000;
+	let targetTimestamp = 1767225600000;
+
+	const offset = (new Date()).getTimezoneOffset() * 1000 * 60;
+	targetTimestamp = targetTimestamp + offset;
 
 	const currentTimestamp = Date.now();
 	const delta = (targetTimestamp - currentTimestamp) / 1000;
